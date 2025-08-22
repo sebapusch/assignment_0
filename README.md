@@ -12,13 +12,13 @@ Your task is to initialize a Python project from scratch using modern tooling. Y
 
 ### Part 1: Git and GitHub Setup
 
-1.  **Clone the Repository:** Clone this repository to your local machine.
+1.  **Clone the repository:** Clone this repository to your local machine.
     ```bash
     git clone https://github.com/rug-oop-2526/assignment_0
     cd assignment_0
     ```
 
-2.  **Create Your GitHub Repository:** Go to **[https://github.com/new](https://github.com/new)** and create a new repository. It does not matter if it's private or public. Do not initialize it with any files, i.e. select __No template__ and __Add README, Add .gitignore, Add license__ should be __off__. Then, copy its URL.
+2.  **Create your GitHub repository:** Go to **[https://github.com/new](https://github.com/new)** and create a new repository. It does not matter if it's private or public. Do not initialize it with any files, i.e. select __No template__ and __Add README, Add .gitignore, Add license__ should be __off__. Then, copy its URL.
 
 3.  **Change the origin of your repository:** You cloned the repository from **[https://github.com/rug-oop-2526/assignment_0](https://github.com/rug-oop-2526/assignment_0)**, but now we want to use the new repository you just created. You can do so by:
     ```bash
@@ -27,7 +27,7 @@ Your task is to initialize a Python project from scratch using modern tooling. Y
 
 ### Part 2: Project Initialization
 
-1.  **Initialize the Project:** Use `uv` to create a `pyproject.toml` file and a virtual environment. This command sets up your project to use Python 3.12. Both can be done through:
+1.  **Initialize the Project:** Use `uv` to create a `pyproject.toml` file and a virtual environment. This command sets up your project to use Python 3.12. This is done through:
     ```bash
     uv init --python 3.12
     ```
@@ -55,9 +55,9 @@ Your task is to initialize a Python project from scratch using modern tooling. Y
 
 2. **Note the Issues:** This code has multiple issues, namely.
     - Formatting and missing whitespaces
-    - Incorrect typehints and return types
+    - Incorrect type hints and return types
     - Missing docstrings
-    - And so on... Try fixing them by yourself first.
+    - And so on... Could you try fixing them by yourself first?
 
 3. **Linters and Code Formatters:** 
 
