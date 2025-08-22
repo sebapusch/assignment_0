@@ -66,7 +66,7 @@ Your task is to initialize a Python project from scratch using modern tooling. Y
 
     Now, run this command and try to fix all issues:
     ```bash
-    uvx ruff check --select ALL
+    uvx ruff check --select ALL --ignore T
     ```
 
     Lastly, check if your types were correct:
