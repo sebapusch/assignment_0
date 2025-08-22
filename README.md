@@ -1,11 +1,11 @@
 # Assignment: Python Project Initialization
 
 ## Objective
-Your task is to initialize a Python project from scratch using modern tooling. You will create a virtual environment, add a specific dependency, write a simple script, format it, and use Git to submit your work.
+Your task is to initialize a Python project from scratch using modern tooling. You will create a virtual environment, add a specific dependency, write a simple script, format it, and use Git to submit your work. An automatic check will assess whether you completed this assignment properly.
 
 
 > [!IMPORTANT]
-> **This assignment is NOT graded!** 
+> **This assignment DOES NOT count towards your grade! Your code will be automatically checked for style, formatting, versioning, and proper types.** 
 > It is only for you to get familiar with the workflow and tool we will be using throughout the course.
 
 ## Instructions
