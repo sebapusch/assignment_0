@@ -27,7 +27,7 @@ Your task is to initialize a Python project from scratch using modern tooling. Y
 
 ### Part 2: Project Initialization
 
-1.  **Initialize the Project:** Use `uv` to create a `pyproject.toml` file and a virtual environment. This command sets up your project to use Python 3.12.
+1.  **Initialize the Project:** Use `uv` to create a `pyproject.toml` file and a virtual environment. This command sets up your project to use Python 3.12. Both can be done through:
     ```bash
     uv init --python 3.12
     ```
