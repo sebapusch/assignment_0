@@ -5,8 +5,8 @@ Your task is to initialize a Python project from scratch using modern tooling. Y
 
 
 > [!IMPORTANT]
-> **This assignment DOES NOT count towards your grade! Your code will be automatically checked for style, formatting, versioning, and proper types.** 
-> It is only for you to get familiar with the workflow and tool we will be using throughout the course.
+> **This assignment DOES NOT count towards your grade!.** 
+> It is only for you to get familiar with the workflow and tools we will be using throughout the course. Your code will automatically be checked for style, formatting, versioning, and proper types.
 
 ## Instructions
 
