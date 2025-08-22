@@ -56,11 +56,11 @@ Your task is to initialize a Python project from scratch using modern tooling. Y
 
 3. **Linters and Code Formatters:** 
 
-    > [!TIP]
-    > To automatically format your code, run:
-    >   ```bash
-    >   uvx ruff format
-    >   ```
+> [!TIP]
+> To automatically format your code, run:
+>   ```bash
+>   uvx ruff format
+>   ```
 
     Do you see the difference?
 
