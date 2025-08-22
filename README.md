@@ -62,17 +62,17 @@ Your task is to initialize a Python project from scratch using modern tooling. Y
 >   uvx ruff format
 >   ```
 
-    Do you see the difference?
+Do you see the difference?
 
-    Now, run this command and try to fix all issues:
-    ```bash
-    uvx ruff check --select ALL --ignore T
-    ```
+Now, run this command and try to fix all issues:
+```bash
+uvx ruff check --select ALL --ignore T
+```
 
-    Lastly, check if your types were correct:
-    ```bash
-    uvx mypy .
-    ```
+Lastly, check if your types were correct:
+```bash
+uvx mypy .
+```
 
 4.  **Commit and Push:** After you think you have resolved all issues with this code, stage all your changes, commit, and push.
     ```bash
