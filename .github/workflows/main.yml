@@ -1,0 +1,104 @@
+name: Main
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+jobs:
+  code-style:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12"]
+      fail-fast: false
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up the environment
+        uses: ./.github/actions/setup-python-env
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Check styling
+        run: uvx ruff check --select ALL --ignore T,D100,D2,D4,ANN002,ANN003,E402
+
+  formatting:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12"]
+      fail-fast: false
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up the environment
+        uses: ./.github/actions/setup-python-env
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Check formatting
+        run: uvx ruff format --diff
+
+  numpy-version-check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12"]
+      fail-fast: false
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up the environment
+        uses: ./.github/actions/setup-python-env
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Verify NumPy Version
+        run: |
+          INSTALLED_VERSION=$(uv pip list --format=freeze | grep numpy)
+          EXPECTED_VERSION="numpy==1.26.0"
+          if [ "$INSTALLED_VERSION" == "$EXPECTED_VERSION" ]; then
+            echo "Correct NumPy version found: $INSTALLED_VERSION"
+          else
+            echo "Error: Incorrect NumPy version."
+            echo "Expected: $EXPECTED_VERSION"
+            echo "Found: $INSTALLED_VERSION"
+            exit 1
+          fi
+        shell: bash
+
+  type-check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12"]
+      fail-fast: false
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up the environment
+        uses: ./.github/actions/setup-python-env
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Check typing
+        run: uvx mypy .
