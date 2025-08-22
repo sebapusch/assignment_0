@@ -29,7 +29,7 @@ Your task is to initialize a Python project from scratch using modern tooling. Y
 
 2.  **Add NumPy Dependency:** Add `numpy` version `1.26.0` and `mypy` to your project. This command will update `pyproject.toml` and install the packages into your `.venv`.
     ```bash
-    uv add numpy==1.26.0
+    uv add numpy==1.26.0 mypy
     ```
 
 3. **Activate Virtual Environment:** Activate your virtual environment with:
