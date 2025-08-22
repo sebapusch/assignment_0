@@ -20,7 +20,7 @@ Your task is to initialize a Python project from scratch using modern tooling. Y
 
 2.  **Create Your GitHub Repository:** Go to **[https://github.com/new](https://github.com/new)** and create a new repository. It does not matter if it's private or public. Do not initialize it with any files, i.e. select __No template__ and __Add README, Add .gitignore, Add license__ should be __off__. Then, copy its URL.
 
-3.  **Change the origin of your repository:** You cloned the repository from **[https://github.com/new](https://github.com/new)**, but now we want to use the new repository you just created. You can do so by
+3.  **Change the origin of your repository:** You cloned the repository from **[https://github.com/rug-oop-2526/assignment_0](https://github.com/rug-oop-2526/assignment_0)**, but now we want to use the new repository you just created. You can do so by:
     ```bash
     git remote set-url origin YOUR_NEW_REPO_URL
     ```
