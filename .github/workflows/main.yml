@@ -101,4 +101,4 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Check typing
-        run: uvx ty check
+        run: uvx mypy .

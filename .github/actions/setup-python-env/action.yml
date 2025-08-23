@@ -30,6 +30,6 @@ runs:
       shell: bash
 
     - name: Install Python dependencies
-      run: uv ty check
+      run: uv add ruff mypy
       shell: bash
 
